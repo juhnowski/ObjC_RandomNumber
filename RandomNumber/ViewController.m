@@ -26,4 +26,8 @@
 }
 
 
+- (IBAction)RandomNumber:(id)sender {
+    int RandomNumber = arc4random() % 100;
+    self.Label.text = [[NSString alloc] initWithFormat:@"%d",RandomNumber];
+}
 @end
